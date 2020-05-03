@@ -10,7 +10,7 @@ describe "Admin flow" do
   end
 
   it "show admin header to admin user" do
-    user = UserBox.create &.email("admin@example.com")
+    user = UserBox.create &.email("admin@quiz.com")
     flow = UserFlow.new
 
     flow.visit Me::Show, as: user
